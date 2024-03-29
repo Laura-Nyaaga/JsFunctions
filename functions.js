@@ -7,24 +7,24 @@ function Vehicles(array){
  Vehicles();
 
 //Using JS functions and an array of numbers, return positive if an element within the array is positive, negative if an element is negative, else zero
-// let numArr = [1,3,4,-5,-6,0];
-// function check(arr1){
-//     let numArr = arr1;
-//     for(let i= 0; i< arr1; i++){
-//         if (arr1[i] < 0) {
-//             console.log('Negative');
-//             return {return: 'Positive'};
-//         }else if(arr1[i]> 0) {
-//             console.log('Positive');
-//           return {return: 'Positive'};
-//         }else{
-//             console.log('Zero');
-//              return {return: 'Zero'};
-//         }
-//         };
-//     };
-//     console.log(check([1,3,4,-5,-6,0]));
-/// Given an array of objects, where each object represents an employee with an id, name, and salary property, write a function that returns a new array of employee objects sorted by their salary in ascending order.
+//let numArr = [1,3,4,-5,-6,0];
+function check(arr1){
+    let numArr = arr1;
+    for(let i= 0; i< arr1; i++){
+        if (arr1[i] < 0) {
+             console.log('Negative');
+            return {return: 'Positive'};
+        }else if(arr1[i]> 0) {
+            console.log('Positive');
+          return {return: 'Positive'};
+        }else{
+            console.log('Zero');
+             return {return: 'Zero'};
+         }
+         };
+    };
+   console.log(check([1,3,4,-5,-6,0]));
+// Given an array of objects, where each object represents an employee with an id, name, and salary property, write a function that returns a new array of employee objects sorted by their salary in ascending order.
 function employee(){
     let object = ['id', 'name', 'salary'];
     const newObject = [];
