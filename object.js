@@ -34,8 +34,13 @@ const students = [
   { name: 'Jill', scores: [85, 90, 84] },
 ];
 function averageList(){
-    let averageScore = Object.values(students);
-    console.log(averageScore)
+    let averageScore = (scores) => {
+        return  scores.reduce((total, value) => total + value)/scores.length;
+    }
+    let calculatedAverage = students.filter(students =>
+        averageScore(students.scores)>=85);
+    let namesOfStudent = calculatedAverage.map(students=>students.name);
+    console.log(namesOfStudent);
 };
 averageList()
 // Given an object representing a car, with properties for the make, model, year, and a method to display the car's information, write a function that takes the car object and adds a new method to the object called age. The age method should return the current age of the car based on the current year and the car's year property.
