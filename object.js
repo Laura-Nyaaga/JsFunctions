@@ -54,7 +54,7 @@ averageList()
   },
   age: function() {
     let current = 2024 - `${this.year}`;
-    console.log(current);
+    console.log(current)
   }
 };
- car.age()
+ car.age();
